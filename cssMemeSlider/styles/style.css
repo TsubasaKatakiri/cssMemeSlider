@@ -84,6 +84,36 @@ body{
 }
 
 
+/*slider*/
+.slider{
+    height: 100%;
+    width: 100%;
+    max-width: 64em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25em;
+}
+
+.slider-window{
+    border-radius: 0.75em;
+    background-image: url('../assets/7.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition:  background-image 0.1s ease-in-out 0.5s;
+    overflow: hidden;
+    -webkit-box-shadow: 0.5em 0.5em 0.75em 0 var(--shadow);
+    -moz-box-shadow: 0.5em 0.5em 0.75em 0 var(--shadow);
+    box-shadow: 0.5em 0.5em 0.75em 0 var(--shadow);
+}
+
+.picture{
+    display: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.75em;
+}
+
+
 .slider-info{
     width: 100%;
     display: flex;
@@ -132,6 +162,54 @@ body{
     display: block;
     animation: slide 0.25s ease-in-out 1 normal both;
 }
+
+/*pictures*/
+.container:has(.slider-info):has(.slider-controls):has(.control-radio):has(#p1:checked) .slider .slider-window .picture-1{
+    display: block;
+    animation: slide 0.25s ease-in-out 1 normal both;
+}
+
+.container:has(.slider-info):has(.slider-controls):has(.control-radio):has(#p2:checked) .slider .slider-window .picture-2{
+    display: block;
+    animation: slide 0.25s ease-in-out 1 normal both;
+}
+
+.container:has(.slider-info):has(.slider-controls):has(.control-radio):has(#p3:checked) .slider .slider-window .picture-3{
+    display: block;
+    animation: slide 0.25s ease-in-out 1 normal both;
+}
+
+.container:has(.slider-info):has(.slider-controls):has(.control-radio):has(#p4:checked) .slider .slider-window .picture-4{
+    display: block;
+    animation: slide 0.25s ease-in-out 1 normal both;
+}
+
+.container:has(.slider-info):has(.slider-controls):has(.control-radio):has(#p5:checked) .slider .slider-window .picture-5{
+    display: block;
+    animation: slide 0.25s ease-in-out 1 normal both;
+}
+
+/*background*/
+.container:has(.slider-info):has(.slider-controls):has(.control-radio):has(#p1:checked) .slider .slider-window{
+    background-image: url('../assets/1.png');
+}
+
+.container:has(.slider-info):has(.slider-controls):has(.control-radio):has(#p2:checked) .slider .slider-window{
+    background-image: url('../assets/2.jpg');
+}
+
+.container:has(.slider-info):has(.slider-controls):has(.control-radio):has(#p3:checked) .slider .slider-window{
+    background-image: url('../assets/3.jpg');
+}
+
+.container:has(.slider-info):has(.slider-controls):has(.control-radio):has(#p4:checked) .slider .slider-window{
+    background-image: url('../assets/4.png');
+}
+
+.container:has(.slider-info):has(.slider-controls):has(.control-radio):has(#p5:checked) .slider .slider-window{
+    background-image: url('../assets/5.jpg');
+}
+
 
 
 /*animation*/
