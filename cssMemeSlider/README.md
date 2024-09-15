@@ -1,0 +1,1 @@
+https://tsubasakatakiri.github.io/cssMemeSlider/cssMemeSlider
