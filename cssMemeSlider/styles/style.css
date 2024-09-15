@@ -212,6 +212,23 @@ body{
 
 
 
+/*media*/
+@media screen and (max-width: 768px){
+    .slider-info{
+        flex-direction: column-reverse;
+    }
+
+    .slider-text{
+        font-size: 0.9em;
+    }
+
+    .slider-controls{
+        margin-left: 0;
+    }
+}
+
+
+
 /*animation*/
 @keyframes slide{
     0%{
